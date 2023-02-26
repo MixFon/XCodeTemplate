@@ -22,12 +22,12 @@ protocol ___VARIABLE_sceneName___Pipe {
 
 final class ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RoutingLogic {
 	
-	private weak var controller: ___VARIABLE_sceneName___Controller?
+	private weak var controller: UIViewController?
 	private var pipe: ___VARIABLE_sceneName___Pipe?
 	
 	var dataStore: ___VARIABLE_sceneName___DataStore?
 	
-	init(controller: ___VARIABLE_sceneName___Controller? = nil) {
+	init(controller: UIViewController? = nil) {
 		self.controller = controller
 	}
 	
