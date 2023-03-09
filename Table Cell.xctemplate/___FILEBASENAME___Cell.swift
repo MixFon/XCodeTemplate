@@ -15,22 +15,22 @@ protocol _ ___VARIABLE_sceneName___Cell: CellData {
 
 extension _ ___VARIABLE_sceneName___Cell {
 	
-	public var height: CGFloat { return 60 }
+	var height: CGFloat? { return 60 }
 	
-	public func hashValues() -> [Int] {
+	func hashValues() -> [Int] {
 		return [
 			
 		]
 	}
 	
-	public var backgroundColor: UIColor? { return nil }
+	var backgroundColor: UIColor? { return nil }
 	
-	public func prepare(cell: UITableViewCell, for tableView: UITableView, indexPath: IndexPath) {
+	func prepare(cell: UITableViewCell, for tableView: UITableView, indexPath: IndexPath) {
 		guard let cell = cell as? ___VARIABLE_sceneName___Cell else { return }
 		cell.configure(with: self)
 	}
 	
-	public func cell(for tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+	func cell(for tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
 		tableView.register(___VARIABLE_sceneName___Cell.nib(), forCellReuseIdentifier: ___VARIABLE_sceneName___Cell.identifire)
 		return tableView.dequeueReusableCell(withIdentifier: ___VARIABLE_sceneName___Cell.identifire, for: indexPath) as? ___VARIABLE_sceneName___Cell ?? .init()
 	}
