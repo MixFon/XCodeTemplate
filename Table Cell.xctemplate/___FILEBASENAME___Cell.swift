@@ -31,7 +31,7 @@ extension _ ___VARIABLE_sceneName___Cell {
 	}
 	
 	func cell(for tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-		tableView.register(___VARIABLE_sceneName___Cell.nib(), forCellReuseIdentifier: ___VARIABLE_sceneName___Cell.identifire)
+		tableView.register(___VARIABLE_sceneName___Cell.nib(bundle), forCellReuseIdentifier: ___VARIABLE_sceneName___Cell.identifire)
 		return tableView.dequeueReusableCell(withIdentifier: ___VARIABLE_sceneName___Cell.identifire, for: indexPath) as? ___VARIABLE_sceneName___Cell ?? .init()
 	}
 }
