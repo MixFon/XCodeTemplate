@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import CoreTableView
-import CoreExtensions
+import MMCoreTableView
+import MMCoreExtensions
 
 protocol _ ___VARIABLE_sceneName___Cell: CellData {
 
