@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import CoreExtensions
+import MMCoreExtensions
 
 protocol ___VARIABLE_sceneName___DisplayLogic: AnyObject {
 	func displayContent(show: ___VARIABLE_sceneName___Model.ViewModel)
