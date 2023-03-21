@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CoreTableView
+import MMCoreTableView
 
 protocol ___VARIABLE_sceneName___Actions {
 	
