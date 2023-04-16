@@ -5,8 +5,6 @@
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //
 
-import Foundation
-
 protocol ___VARIABLE_sceneName___BusinessLogic: AnyObject {
 	func makeState(requst: ___VARIABLE_sceneName___Model.Request)
 }
@@ -27,8 +25,6 @@ final class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___Business
 		switch requst {
 		case .start:
 			self.presenter?.buildState(response: .start)
-		case .work:
-			self.presenter?.buildState(response: .work)
 		}
 	}
     
