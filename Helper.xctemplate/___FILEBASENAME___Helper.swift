@@ -14,10 +14,10 @@ protocol ___VARIABLE_sceneName___HelperActions {
 
 final class ___VARIABLE_sceneName___Helper: _TableHelper {
 	
-	private var actions: ___VARIABLE_sceneName___Actions?
+	private var actions: ___VARIABLE_sceneName___HelperActions?
 	private var data: ___VARIABLE_dataName:identifier___?
 	
-	init(data: ___VARIABLE_dataName:identifier___? = nil, actions: ___VARIABLE_sceneName___Actions? = nil) {
+	init(data: ___VARIABLE_dataName:identifier___? = nil, actions: ___VARIABLE_sceneName___HelperActions? = nil) {
 		self.data = data
 		self.actions = actions
 	}
