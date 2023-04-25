@@ -8,7 +8,7 @@
 import Foundation
 import MMCoreTableView
 
-protocol ___VARIABLE_sceneName___Actions {
+protocol ___VARIABLE_sceneName___HelperActions {
 	
 }
 
