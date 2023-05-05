@@ -131,9 +131,9 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Configurator</string>
+			<string>___VARIABLE_sceneName:identifier___Factory</string>
 			<key>Description</key>
-			<string>Confugurator</string>
+			<string>Factory</string>
 			<key>Identifier</key>
 			<string>configureFileName</string>
 			<key>Name</key>
