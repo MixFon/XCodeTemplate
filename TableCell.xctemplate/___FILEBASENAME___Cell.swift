@@ -43,6 +43,12 @@ final class ___VARIABLE_sceneName___Cell: UITableViewCell {
 		super.awakeFromNib()
 	}
 
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		// Отступы
+		self.contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+	}
+
 	func configure(with data: _ ___VARIABLE_sceneName___Cell) {
 		
 	}
