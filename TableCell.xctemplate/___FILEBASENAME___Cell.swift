@@ -24,6 +24,7 @@ extension _ ___VARIABLE_sceneName___Cell {
 	}
 	
 	var backgroundColor: UIColor? { return nil }
+	var roundingStyle: CellRoundingStyle? { return nil }
 	
 	func prepare(cell: UITableViewCell, for tableView: UITableView, indexPath: IndexPath) {
 		guard let cell = cell as? ___VARIABLE_sceneName___Cell else { return }
