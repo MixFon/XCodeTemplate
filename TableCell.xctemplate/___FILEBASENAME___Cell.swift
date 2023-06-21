@@ -50,6 +50,7 @@ final class ___VARIABLE_sceneName___Cell: UITableViewCell {
 	}
 
 	func configure(with data: _ ___VARIABLE_sceneName___Cell) {
+		self.separatorInset = UIEdgeInsets(top: 0, left: self.bounds.size.width, bottom: 0, right: 0)
 		
 	}
 }
