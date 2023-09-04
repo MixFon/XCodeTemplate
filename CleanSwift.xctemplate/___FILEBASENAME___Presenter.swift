@@ -13,7 +13,7 @@ final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presentat
     
 	private weak var controller: ___VARIABLE_sceneName___DisplayLogic?
     
-    init(controller: ___VARIABLE_sceneName___DisplayLogic?) {
+    init(controller: ___VARIABLE_sceneName___DisplayLogic) {
         self.controller = controller
     }
     

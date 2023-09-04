@@ -8,20 +8,16 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___RoutingLogic {
-	func presentController()
+
 }
 
 final class ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RoutingLogic {
 	
-	private weak var controller: UIViewController?
+	private weak var controller: ___VARIABLE_sceneName___Controller?
+	private let dataStore: ___VARIABLE_sceneName___DataStore
 	
-	var dataStore: ___VARIABLE_sceneName___DataStore?
-	
-	init(controller: UIViewController? = nil) {
+	init(controller: ___VARIABLE_sceneName___Controller, dataStore: ___VARIABLE_sceneName___DataStore) {
 		self.controller = controller
-	}
-	
-	func presentController() {
-		
+		self.dataStore = dataStore
 	}
 }
