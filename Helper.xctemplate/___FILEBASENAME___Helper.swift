@@ -12,7 +12,7 @@ protocol ___VARIABLE_sceneName___HelperActions {
 	
 }
 
-final class ___VARIABLE_sceneName___Helper: _TableHelper {
+final class ___VARIABLE_sceneName___Helper {
 	
 	private var actions: ___VARIABLE_sceneName___HelperActions?
 	private var data: ___VARIABLE_dataName:identifier___
@@ -21,20 +21,7 @@ final class ___VARIABLE_sceneName___Helper: _TableHelper {
 		self.data = data
 		self.actions = actions
 	}
-	
-	func makeHeader() -> HeaderData? {
-		return nil
-	}
-	
-	func makeElements() -> [Element] {
-		var elements: [Element] = []
-		return elements
-	}
-	
-	func makeFooter() -> FooterData? {
-		return nil
-	}
-	
+
 	func makeState() -> State {
 		let elements = makeElements()
 		let section = makeSection()
@@ -42,7 +29,20 @@ final class ___VARIABLE_sceneName___Helper: _TableHelper {
 		return state
 	}
 	
-	func makeSection() -> SectionState {
+	private func makeHeader() -> HeaderData? {
+		return nil
+	}
+	
+	private func makeElements() -> [Element] {
+		var elements: [Element] = []
+		return elements
+	}
+	
+	private func makeFooter() -> FooterData? {
+		return nil
+	}
+	
+	private func makeSection() -> SectionState {
 		let section = SectionState(
 			id: "___VARIABLE_sceneName___DataSection",
 			isCollapsed: false,
