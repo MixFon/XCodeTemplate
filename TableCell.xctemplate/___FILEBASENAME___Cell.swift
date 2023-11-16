@@ -41,6 +41,7 @@ final class ___VARIABLE_sceneName___Cell: UITableViewCell {
 
 	override func awakeFromNib() {
 		super.awakeFromNib()
+		self.selectionStyle = .none
 	}
 
 	override func layoutSubviews() {
