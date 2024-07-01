@@ -54,7 +54,7 @@ final class ___VARIABLE_sceneName___Cell: UITableViewCell {
 		let views: [UIView] = []
 		views.forEach({
 			$0.translatesAutoresizingMaskIntoConstraints = false
-			addSubview($0)
+			self.contentView.addSubview($0)
 		})
 		NSLayoutConstraint.activate([
 
