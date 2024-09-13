@@ -14,7 +14,7 @@ enum ___VARIABLE_sceneName___Model {
     }
     
     enum Response {
-		case start(Int)
+		case start
     }
     
     enum ViewModel {
