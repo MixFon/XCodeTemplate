@@ -22,7 +22,7 @@ final class ___VARIABLE_sceneName___Data: _ ___VARIABLE_sceneName___View, Observ
 struct ___VARIABLE_sceneName___View: View, _Displayable {
 	
 	@ObservedObject
-	private var data = ___VARIABLE_sceneName___Data()
+	var data = ___VARIABLE_sceneName___Data()
 	var delegate: _ ___VARIABLE_sceneName___Actions?
 	
 	var body: some View {
