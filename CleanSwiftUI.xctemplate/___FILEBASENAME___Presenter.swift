@@ -11,16 +11,16 @@ protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject {
 
 final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
     
-	private var data: _ ___VARIABLE_sceneName___View
+	private weak var controller: ___VARIABLE_sceneName___DisplayLogic?
     
-	init(data: _ ___VARIABLE_sceneName___View) {
-		self.data = data
+    init(controller: ___VARIABLE_sceneName___DisplayLogic) {
+        self.controller = controller
     }
     
 	func buildState(response: ___VARIABLE_sceneName___Model.Response) {
 		switch response {
 		case .start:
-			break
+			self.controller?.displayContent(show: .display)
 		}
 	}
 }
