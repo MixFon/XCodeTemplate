@@ -15,7 +15,7 @@ protocol ___VARIABLE_sceneName___DataStore {
 
 final class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic {
     
-    private var presenter: ___VARIABLE_sceneName___PresentationLogic
+    private let presenter: ___VARIABLE_sceneName___PresentationLogic
     
     init(presenter: ___VARIABLE_sceneName___PresentationLogic) {
         self.presenter = presenter
