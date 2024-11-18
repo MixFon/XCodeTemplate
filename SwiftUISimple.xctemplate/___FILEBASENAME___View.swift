@@ -19,7 +19,7 @@ final class ___VARIABLE_sceneName___Data: _ ___VARIABLE_sceneName___View, Observ
 	
 }
 
-struct ___VARIABLE_sceneName___View: View, _Displayable {
+struct ___VARIABLE_sceneName___View: View {
 	
 	@ObservedObject
 	var data = ___VARIABLE_sceneName___Data()
