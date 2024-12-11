@@ -6,7 +6,7 @@
 //
 
 protocol ___VARIABLE_sceneName___BusinessLogic: AnyObject {
-	func makeState(requst: ___VARIABLE_sceneName___Model.Request)
+	func makeState(request: ___VARIABLE_sceneName___Model.Request)
 }
 
 protocol ___VARIABLE_sceneName___DataStore {
@@ -21,8 +21,8 @@ final class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___Business
         self.presenter = presenter
     }
 	
-	func makeState(requst: ___VARIABLE_sceneName___Model.Request) {
-		switch requst {
+	func makeState(request: ___VARIABLE_sceneName___Model.Request) {
+		switch request {
 		case .start:
 			self.presenter.buildState(response: .start)
 		}

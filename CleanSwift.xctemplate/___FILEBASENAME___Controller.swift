@@ -19,7 +19,7 @@ final class ___VARIABLE_sceneName___Controller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-		self.interactor?.makeState(requst: .start)
+		self.interactor?.makeState(request: .start)
     }
     
 }
@@ -29,7 +29,7 @@ extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___DisplayLog
 	func displayContent(show: ___VARIABLE_sceneName___Model.ViewModel) {
 		switch show {
 		case .display:
-			DispatchQueue.main.async {
+			Task { @MainActor in
 
 			}
 		}
