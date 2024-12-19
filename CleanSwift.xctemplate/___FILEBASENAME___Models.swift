@@ -20,4 +20,12 @@ enum ___VARIABLE_sceneName___Model {
     enum ViewModel {
 		case display
     }
+
+	enum Route {
+		case route
+	}
+
+	enum Action {
+		case action
+	}
 }

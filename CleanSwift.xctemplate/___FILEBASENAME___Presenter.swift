@@ -20,7 +20,7 @@ final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presentat
 	func buildState(response: ___VARIABLE_sceneName___Model.Response) {
 		switch response {
 		case .start:
-			self.controller?.displayContent(show: .display)
+			self.controller?.displayContent(.display)
 		}
 	}
 }
