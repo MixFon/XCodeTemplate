@@ -11,7 +11,7 @@ protocol _ ___VARIABLE_sceneName___View {
 	
 }
 
-protocol _ ___VARIABLE_sceneName___Actions {
+protocol _ ___VARIABLE_sceneName___Actions: AnyObject {
 	
 }
 
@@ -23,7 +23,7 @@ struct ___VARIABLE_sceneName___View: View {
 	
 	@ObservedObject
 	var data = ___VARIABLE_sceneName___Data()
-	var delegate: _ ___VARIABLE_sceneName___Actions?
+	weak var delegate: _ ___VARIABLE_sceneName___Actions?
 	
 	var body: some View {
 		Text("Hello word")
