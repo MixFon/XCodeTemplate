@@ -8,6 +8,7 @@
 import UIKit
 import SwiftUI
 
+@MainActor
 final class ___VARIABLE_sceneName___Factory {
 	
 	func configure() -> UIViewController {

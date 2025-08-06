@@ -8,10 +8,10 @@
 import UIKit
 import SwiftUI
 
-protocol ___VARIABLE_sceneName___DisplayLogic: AnyObject {
-	func requestRoute(_ route: ___VARIABLE_sceneName___Model.Route)
+protocol ___VARIABLE_sceneName___DisplayLogic: AnyObject, Sendable {
+	@MainActor func requestRoute(_ route: ___VARIABLE_sceneName___Model.Route) async
 	func perfromAction(_ action: ___VARIABLE_sceneName___Model.Action)
-	func displayContent(_ viewModel: ___VARIABLE_sceneName___Model.ViewModel)
+	@MainActor func displayContent(_ viewModel: ___VARIABLE_sceneName___Model.ViewModel) async
 }
 
 final class ___VARIABLE_sceneName___Controller: UIHostingController<___VARIABLE_sceneName___View> {
@@ -29,7 +29,7 @@ final class ___VARIABLE_sceneName___Controller: UIHostingController<___VARIABLE_
 
 extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___DisplayLogic {
     
-	func displayContent(_ viewModel: ___VARIABLE_sceneName___Model.ViewModel) {
+	func displayContent(_ viewModel: ___VARIABLE_sceneName___Model.ViewModel) async {
 		switch viewModel {
 		case .display:
 			Task { @MainActor in
@@ -38,7 +38,7 @@ extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___DisplayLog
 		}
 	}
 	
-	func requestRoute(_ route: ___VARIABLE_sceneName___Model.Route) {
+	func requestRoute(_ route: ___VARIABLE_sceneName___Model.Route) async {
 		switch route {
 		case .route:
 			Task { @MainActor in

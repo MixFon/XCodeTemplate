@@ -6,7 +6,7 @@
 //
 
 protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject {
-	func buildState(response: ___VARIABLE_sceneName___Model.Response)
+	func buildState(response: ___VARIABLE_sceneName___Model.Response) async 
 }
 
 final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
@@ -17,10 +17,10 @@ final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presentat
         self.controller = controller
     }
     
-	func buildState(response: ___VARIABLE_sceneName___Model.Response) {
+	func buildState(response: ___VARIABLE_sceneName___Model.Response) async {
 		switch response {
 		case .start:
-			self.controller?.displayContent(.display)
+			await self.controller?.displayContent(.display)
 		}
 	}
 }

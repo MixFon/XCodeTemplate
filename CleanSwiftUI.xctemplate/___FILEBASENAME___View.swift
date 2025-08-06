@@ -11,6 +11,7 @@ protocol _ ___VARIABLE_sceneName___View {
 	
 }
 
+@MainActor
 protocol _ ___VARIABLE_sceneName___Actions: AnyObject {
 	
 }
