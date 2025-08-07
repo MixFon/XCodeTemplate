@@ -18,8 +18,8 @@ final class ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RoutingLogic
 	private weak var controller: ___VARIABLE_sceneName___Controller?
 	private let dataStore: ___VARIABLE_sceneName___DataStore
 	
-	init(controller: ___VARIABLE_sceneName___Controller, dataStore: ___VARIABLE_sceneName___DataStore) {
-		self.controller = controller
+	init(dataStore: ___VARIABLE_sceneName___DataStore, controller: ___VARIABLE_sceneName___Controller) {
 		self.dataStore = dataStore
+		self.controller = controller
 	}
 }
