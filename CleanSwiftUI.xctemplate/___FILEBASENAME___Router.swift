@@ -8,6 +8,7 @@
 import UIKit
 import SwiftUI
 
+@MainActor
 protocol ___VARIABLE_sceneName___RoutingLogic {
 
 }
