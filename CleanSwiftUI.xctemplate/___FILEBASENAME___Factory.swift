@@ -17,8 +17,8 @@ final class ___VARIABLE_sceneName___Factory {
 		let presenter = ___VARIABLE_sceneName___Presenter(controller: controller)
 		let interactor = ___VARIABLE_sceneName___Interactor(presenter: presenter)
 		let router = ___VARIABLE_sceneName___Router(
-			controller: controller,
-			dataStore: interactor
+			dataStore: interactor,
+			controller: controller
 		)
 		controller.interactor = interactor
 		controller.router = router
