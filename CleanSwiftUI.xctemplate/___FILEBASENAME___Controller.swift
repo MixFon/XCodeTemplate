@@ -22,7 +22,9 @@ final class ___VARIABLE_sceneName___Controller: UIHostingController<___VARIABLE_
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.rootView.delegate = self
-		self.interactor?.makeState(requst: .start)
+		Task { [interactor] in
+			await interactor?.makeState(requst: .start)
+		}
     }
     
 }
@@ -32,18 +34,14 @@ extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___DisplayLog
 	func displayContent(_ viewModel: ___VARIABLE_sceneName___Model.ViewModel) async {
 		switch viewModel {
 		case .display:
-			Task { @MainActor in
-				
-			}
+			break
 		}
 	}
 	
 	func requestRoute(_ route: ___VARIABLE_sceneName___Model.Route) async {
 		switch route {
 		case .route:
-			Task { @MainActor in
-				
-			}
+			break
 		}
 	}
 	

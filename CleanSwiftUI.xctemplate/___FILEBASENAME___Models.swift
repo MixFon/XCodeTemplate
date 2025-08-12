@@ -17,7 +17,7 @@ enum ___VARIABLE_sceneName___Model {
 		case start
     }
     
-    enum ViewModel {
+    enum ViewModel: Sendable {
 		case display
     }
 	
