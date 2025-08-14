@@ -21,7 +21,7 @@ enum ___VARIABLE_sceneName___Model {
 		case display
     }
 	
-	enum Route {
+	enum Route: Sendable {
 		case route
 	}
 
