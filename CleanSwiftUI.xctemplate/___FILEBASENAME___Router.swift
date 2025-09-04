@@ -15,10 +15,10 @@ protocol ___VARIABLE_sceneName___RoutingLogic {
 
 final class ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RoutingLogic {
 	
-	private weak var controller: ___VARIABLE_sceneName___Controller?
+	private weak var controller: UIViewController?
 	private let dataStore: ___VARIABLE_sceneName___DataStore
 	
-	init(dataStore: ___VARIABLE_sceneName___DataStore, controller: ___VARIABLE_sceneName___Controller) {
+	init(dataStore: ___VARIABLE_sceneName___DataStore, controller: UIViewController) {
 		self.dataStore = dataStore
 		self.controller = controller
 	}

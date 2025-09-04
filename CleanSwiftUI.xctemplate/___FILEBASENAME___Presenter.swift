@@ -5,11 +5,11 @@
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //
 
-protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject {
+protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject, Actor {
 	func buildState(response: ___VARIABLE_sceneName___Model.Response) async 
 }
 
-final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
+final actor ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
     
 	private weak var controller: ___VARIABLE_sceneName___DisplayLogic?
     
