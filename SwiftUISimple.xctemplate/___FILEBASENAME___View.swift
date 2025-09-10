@@ -34,8 +34,10 @@ struct ___VARIABLE_sceneName___View: View {
 	}
 }
 
+#if DEBUG
 struct ___VARIABLE_sceneName___View_Previews: PreviewProvider {
 	static var previews: some View {
 		___VARIABLE_sceneName___View()
 	}
 }
+#endif
