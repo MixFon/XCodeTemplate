@@ -6,7 +6,7 @@
 //
 
 protocol ___VARIABLE_sceneName___BusinessLogic: AnyObject {
-	func makeState(requst: ___VARIABLE_sceneName___Model.Request) async
+	func makeState(request: ___VARIABLE_sceneName___Model.Request) async
 }
 
 protocol ___VARIABLE_sceneName___DataStore {

@@ -23,7 +23,7 @@ final class ___VARIABLE_sceneName___Controller: UIHostingController<___VARIABLE_
         super.viewDidLoad()
 		self.rootView.delegate = self
 		Task { [interactor] in
-			await interactor?.makeState(requst: .start)
+			await interactor?.makeState(request: .start)
 		}
     }
     
