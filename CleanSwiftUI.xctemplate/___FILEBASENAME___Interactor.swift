@@ -21,8 +21,8 @@ final class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___Business
         self.presenter = presenter
     }
 	
-	func makeState(requst: ___VARIABLE_sceneName___Model.Request) async {
-		switch requst {
+	func makeState(request: ___VARIABLE_sceneName___Model.Request) async {
+		switch request {
 		case .start:
 			break
 		}

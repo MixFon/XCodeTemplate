@@ -21,7 +21,6 @@ final class ___VARIABLE_sceneName___Controller: UIHostingController<___VARIABLE_
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		self.rootView.delegate = self
 		Task { [interactor] in
 			await interactor?.makeState(request: .start)
 		}
@@ -51,8 +50,4 @@ extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___DisplayLog
 			break
 		}
 	}
-}
-
-extension ___VARIABLE_sceneName___Controller: _ ___VARIABLE_sceneName___Actions {
-	
 }
