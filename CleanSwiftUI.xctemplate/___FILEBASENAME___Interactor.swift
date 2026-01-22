@@ -5,7 +5,7 @@
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //
 
-protocol ___VARIABLE_sceneName___BusinessLogic: AnyObject {
+protocol ___VARIABLE_sceneName___BusinessLogic: AnyObject, Sendable {
 	func makeState(request: ___VARIABLE_sceneName___Model.Request) async
 }
 

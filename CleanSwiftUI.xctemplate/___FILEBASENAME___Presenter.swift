@@ -5,12 +5,13 @@
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //
 
-protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject, Actor {
+protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject, Sendable {
 	func buildState(response: ___VARIABLE_sceneName___Model.Response) async 
 }
 
-final actor ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
+final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
     
+	nonisolated(unsafe)
 	private weak var controller: ___VARIABLE_sceneName___DisplayLogic?
     
     init(controller: ___VARIABLE_sceneName___DisplayLogic) {
