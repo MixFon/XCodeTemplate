@@ -7,11 +7,7 @@
 
 import SwiftUI
 
-protocol _ ___VARIABLE_sceneName___View {
-	
-}
-
-final class ___VARIABLE_sceneName___Data: _ ___VARIABLE_sceneName___View, ObservableObject {
+final class ___VARIABLE_sceneName___Data: ObservableObject {
 	
 }
 
@@ -23,10 +19,6 @@ struct ___VARIABLE_sceneName___View: View, _Displayable {
 	var body: some View {
 		Text("Hello word")
     }
-
-	func configure(with data: any _ ___VARIABLE_sceneName___View) {
-
-	}
 }
 
 #if DEBUG
