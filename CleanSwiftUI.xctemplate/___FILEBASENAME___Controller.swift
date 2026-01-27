@@ -10,7 +10,7 @@ import SwiftUI
 
 protocol ___VARIABLE_sceneName___DisplayLogic: AnyObject, Sendable {
 	@MainActor func requestRoute(_ route: ___VARIABLE_sceneName___Model.Route) async
-	func perfromAction(_ action: ___VARIABLE_sceneName___Model.Action)
+	func perfromAction(_ action: ___VARIABLE_sceneName___Model.Action) async
 	@MainActor func displayContent(_ viewModel: ___VARIABLE_sceneName___Model.ViewModel) async
 }
 
@@ -44,7 +44,7 @@ extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___DisplayLog
 		}
 	}
 	
-	func perfromAction(_ action: ___VARIABLE_sceneName___Model.Action) {
+	func perfromAction(_ action: ___VARIABLE_sceneName___Model.Action) async {
 		switch action {
 		case .action:
 			break
