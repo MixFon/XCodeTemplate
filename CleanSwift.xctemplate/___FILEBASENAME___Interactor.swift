@@ -5,8 +5,8 @@
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //
 
-protocol ___VARIABLE_sceneName___BusinessLogic: AnyObject {
-	func makeState(request: ___VARIABLE_sceneName___Model.Request)
+protocol ___VARIABLE_sceneName___BusinessLogic: AnyObject, Sendable {
+	func makeState(request: ___VARIABLE_sceneName___Model.Request) async
 }
 
 protocol ___VARIABLE_sceneName___DataStore {
@@ -15,16 +15,16 @@ protocol ___VARIABLE_sceneName___DataStore {
 
 final class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic {
     
-    private var presenter: ___VARIABLE_sceneName___PresentationLogic
+    private let presenter: ___VARIABLE_sceneName___PresentationLogic
     
     init(presenter: ___VARIABLE_sceneName___PresentationLogic) {
         self.presenter = presenter
     }
 	
-	func makeState(request: ___VARIABLE_sceneName___Model.Request) {
+	func makeState(request: ___VARIABLE_sceneName___Model.Request) async {
 		switch request {
 		case .start:
-			self.presenter.buildState(response: .start)
+			break
 		}
 	}
     

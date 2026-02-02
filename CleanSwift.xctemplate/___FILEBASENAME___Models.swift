@@ -17,11 +17,11 @@ enum ___VARIABLE_sceneName___Model {
 		case start
     }
     
-    enum ViewModel {
+    enum ViewModel: Sendable {
 		case display
     }
-
-	enum Route {
+	
+	enum Route: Sendable {
 		case route
 	}
 

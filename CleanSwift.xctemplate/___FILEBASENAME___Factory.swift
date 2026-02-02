@@ -6,16 +6,18 @@
 //
 
 import UIKit
+import SwiftUI
 
+@MainActor
 final class ___VARIABLE_sceneName___Factory {
 	
 	func configure() -> UIViewController {
-		let controller = ___VARIABLE_sceneName___Controller(nibName: "___VARIABLE_sceneName___Controller", bundle: <#T##Bundle?#>)
+		let controller = ___VARIABLE_sceneName___Controller()
 		let presenter = ___VARIABLE_sceneName___Presenter(controller: controller)
 		let interactor = ___VARIABLE_sceneName___Interactor(presenter: presenter)
 		let router = ___VARIABLE_sceneName___Router(
-			controller: controller,
-			dataStore: interactor
+			dataStore: interactor,
+			controller: controller
 		)
 		controller.interactor = interactor
 		controller.router = router

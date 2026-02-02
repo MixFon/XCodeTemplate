@@ -5,22 +5,23 @@
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //
 
-protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject {
-	func buildState(response: ___VARIABLE_sceneName___Model.Response)
+protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject, Sendable {
+	func buildState(response: ___VARIABLE_sceneName___Model.Response) async 
 }
 
 final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
     
+	nonisolated(unsafe)
 	private weak var controller: ___VARIABLE_sceneName___DisplayLogic?
     
     init(controller: ___VARIABLE_sceneName___DisplayLogic) {
         self.controller = controller
     }
     
-	func buildState(response: ___VARIABLE_sceneName___Model.Response) {
+	func buildState(response: ___VARIABLE_sceneName___Model.Response) async {
 		switch response {
 		case .start:
-			self.controller?.displayContent(.display)
+			await self.controller?.displayContent(.display)
 		}
 	}
 }
