@@ -12,7 +12,8 @@ import SwiftUI
 final class ___VARIABLE_sceneName___Factory {
 	
 	func configure() -> UIViewController {
-		let controller = ___VARIABLE_sceneName___Controller()
+		let mainView = ___VARIABLE_sceneName___View()
+		let controller = ___VARIABLE_sceneName___Controller(rootView: mainView)
 		let presenter = ___VARIABLE_sceneName___Presenter(controller: controller)
 		let store = ___VARIABLE_sceneName___Store()
 		let interactor = ___VARIABLE_sceneName___Interactor(
